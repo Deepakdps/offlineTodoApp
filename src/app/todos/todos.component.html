@@ -1,0 +1,49 @@
+<ActionBar title="My TODOS" icon="" class="action-bar">
+  <ActionItem (tap)="logout()">
+    <Button text="Logout" class="action-item"></Button>
+  </ActionItem>
+</ActionBar>
+<StackLayout backgroundColor="#FFFFFF" rows="70, 20, *" columns="*, *">
+  <StackLayout class="card" height="90" row="0">
+    <GridLayout columns="*,*" class="form" margin="10">
+      <TextField
+        class="input input-border"
+        height="50"
+        #data
+        col="0"
+        #todos
+      ></TextField>
+      <Button
+        class="btn btn-primary"
+        col="1"
+        text="Save"
+        (tap)="add()"
+      ></Button>
+    </GridLayout>
+  </StackLayout>
+  <StackLayout class="hr-dark m-10"></StackLayout>
+  <StackLayout row="2" margin="5">
+    <RadListView [items]="todosList" height="450">
+      <ng-template let-item="item" let-i="index">
+        <GridLayout columns="auto,*">
+          <!-- <Image class="m-5" horizontalAlignment="left" col="0" width="20" height="20" [src]="'~/assets/edit.png'"></Image> -->
+          <Label
+            class="m-5"
+            (tap)="viewDetail(item.id)"
+            col="1"
+            [text]="item.name"
+          ></Label>
+          <Image
+            class="m-5"
+            col="2"
+            horizontalAlignment="right"
+            width="40"
+            height="40"
+            (tap)="delete($event)"
+            src="res://trash"
+          ></Image>
+        </GridLayout>
+      </ng-template>
+    </RadListView>
+  </StackLayout>
+</StackLayout>

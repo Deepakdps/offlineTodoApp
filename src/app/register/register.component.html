@@ -1,0 +1,26 @@
+<GridLayout backgroundColor="#CCCCCC">
+  <StackLayout margin="10" verticalAlignment="center">
+    <StackLayout class="form" padding="15" backgroundColor="#FFFFFF">
+      <StackLayout class="input-field">
+        <Label text="Email" class="label font-weight-bold m-b-5"></Label>
+        <TextField class="input" #email></TextField>
+        <StackLayout class="hr-light"></StackLayout>
+      </StackLayout>
+      <StackLayout class="input-field">
+        <Label text="Password" class="label font-weight-bold m-b-5"></Label>
+        <TextField secure="true" class="input" #password></TextField>
+        <StackLayout class="hr-light"></StackLayout>
+      </StackLayout>
+      <Button
+        class="btn btn-primary btn-rounded-lg"
+        text="REGISTER"
+        (tap)="register()"
+      ></Button>
+      <Label
+        (tap)="goBack()"
+        text="Already a member? Login here."
+        class="text-center footnote"
+      ></Label>
+    </StackLayout>
+  </StackLayout>
+</GridLayout>
