@@ -1,7 +1,8 @@
 # SQLite-Demo-App
 
-This is a demo app to show how you can integrate your Nativescript(Angular) mobile app with Sqlite DB using the [Plugin]
-(https://www.npmjs.com/package/nativescript-sqlite)
+
+This is a demo app to show how you can integrate your Nativescript(Angular) mobile app with Sqlite DB using the [Plugin](https://www.npmjs.com/package/nativescript-sqlite)
+
 
 
 ## Sections
@@ -26,8 +27,8 @@ tns run android
 
 ## Screenshot
 
-![Alt](/screenshot.jpeg 'Login view')
-![Alt](/screenshot-1.jpeg 'Dashboard view')
+![Alt](/screenshot.png 'Login view')
+![Alt](/screenshot1.png 'Dashboard view')
 
 
 
