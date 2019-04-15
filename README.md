@@ -2,6 +2,7 @@
 
 
 This is a demo app to show how you can integrate your Nativescript(Angular) mobile app with Sqlite DB using the [Plugin](https://www.npmjs.com/package/nativescript-sqlite)
+inspired [from](https://github.com/kumarandena/groceries-sqlite)
 
 
 
